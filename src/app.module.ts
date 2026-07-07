@@ -5,6 +5,7 @@ import { UsersModule } from './users/users.module';
 import { AuthModule } from './auth/auth.module';
 import { getMemoryMongoUri } from './mongo-memory';
 import { ProdutosModule } from './produtos/produtos.module';
+import { PedidosModule } from './pedidos/pedidos.module';
 
 @Module({
   imports: [
@@ -17,6 +18,7 @@ import { ProdutosModule } from './produtos/produtos.module';
     UsersModule,
     AuthModule,
     ProdutosModule,
+    PedidosModule,
   ],
 })
 export class AppModule {}
