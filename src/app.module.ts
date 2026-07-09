@@ -6,6 +6,8 @@ import { AuthModule } from './auth/auth.module';
 import { getMemoryMongoUri } from './mongo-memory';
 import { ProdutosModule } from './produtos/produtos.module';
 import { PedidosModule } from './pedidos/pedidos.module';
+import { CepModule } from './cep/cep.module';
+import { CarrinhoModule } from './carrinho/carrinho.module';
 
 @Module({
   imports: [
@@ -19,6 +21,8 @@ import { PedidosModule } from './pedidos/pedidos.module';
     AuthModule,
     ProdutosModule,
     PedidosModule,
+    CepModule,
+    CarrinhoModule,
   ],
 })
 export class AppModule {}
